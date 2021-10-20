@@ -55,9 +55,58 @@ nurayahmadova@Nurays-MacBook Story % open chapter2.txt
 nurayahmadova@Nurays-MacBook Story % open chapter3.txt
 nurayahmadova@Nurays-MacBook Story % touch full_terminal_code.txt
 nurayahmadova@Nurays-MacBook Story % open full_terminal_code.txt
+nurayahmadova@Nurays-MacBook Story % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   chapter1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	chapter2.txt
+	chapter3.txt
+	full_terminal_code.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nurayahmadova@Nurays-MacBook Story % git add . 
+nurayahmadova@Nurays-MacBook Story % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   chapter1.txt
+	new file:   chapter2.txt
+	new file:   chapter3.txt
+	new file:   full_terminal_code.txt
+
+nurayahmadova@Nurays-MacBook Story % git commit -m "Complete Chapter 2 and 3"
+[master 00daa31] Complete Chapter 2 and 3
+ 4 files changed, 77 insertions(+), 1 deletion(-)
+ create mode 100644 chapter2.txt
+ create mode 100644 chapter3.txt
+ create mode 100644 full_terminal_code.txt
+nurayahmadova@Nurays-MacBook Story % git log
+commit 00daa31daa7dcee95dcbd9c9fc1be17720b091e1 (HEAD -> master)
+Author: NurayAhmadova <nuray.akhmedova@gmail.com>
+Date:   Wed Oct 20 12:50:56 2021 +0400
+
+    Complete Chapter 2 and 3
+
+commit a0e1b6c4cdd9a2cee6c515a4f455dbed4ba4631b
+Author: NurayAhmadova <nuray.akhmedova@gmail.com>
+Date:   Wed Oct 20 12:46:09 2021 +0400
+
+    Complete Chapter 1
+nurayahmadova@Nurays-MacBook Story % git diff chapter3.txt
+diff --git a/chapter3.txt b/chapter3.txt
+index 7986d36..ffb7598 100644
+--- a/chapter3.txt
++++ b/chapter3.txt
+@@ -1 +1 @@
+-It was the spring of hope, it was the winter of despair.
+\ No newline at end of file
++Asdfghjkmjnhbgfdfghjkl;
+\ No newline at end of file
+nurayahmadova@Nurays-MacBook Story % git checkout chapter3.txt 
+Updated 1 path from the index
 nurayahmadova@Nurays-MacBook Story % 
-
-
-
-
-
